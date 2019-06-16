@@ -61,7 +61,7 @@ class AuthController extends Controller
         $user = User::findOne(1);
 
         Yii::$app->user->logout();
-//        var_dump(Yii::$app->user->isGuest);
+
         if (Yii::$app->user->isGuest)
         {
             echo 'ПОльзователь гость';
